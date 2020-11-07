@@ -1,0 +1,69 @@
+
+
+
+/*=====================================
+        NASTED DROPDOWN STYLE
+======================================*/
+.nasted-dropdown {
+    height: 402px;
+    padding: 0px 8px;
+    overflow-y: scroll;
+
+    li {
+        border-bottom: 1px solid var(--border-clr);
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            width: 100%;
+            padding: 8px 8px;
+            color: var(--body-clr);
+            text-transform: capitalize;
+            font-size: 15px;
+            @include flex__center;
+            justify-content: space-between;
+            @include cursor__transition;
+    
+            &:hover {
+                color: var(--brand-clr);
+            }
+    
+            i {
+                font-size: 12px;
+            }
+        }
+
+        ul {
+            padding: 0px 18px;
+            display: none;
+
+            li {
+                a {
+                    font-size: 14px;
+                    padding: 6px 0px;
+                    position: relative;
+                    margin-left: 25px;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: 50%;
+                        left: -20px;
+                        transform: translateY(-50%);
+                        width: 10px;
+                        height: 1px;
+                        background: var(--body-clr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nasted-dropdown {
+        height: 266px;
+    }
+}

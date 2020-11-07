@@ -1,0 +1,41 @@
+
+
+/*=====================================
+        HEADER SELECT PART STYLE
+======================================*/
+.header-select {
+    border: none;
+    width: 100px;
+    height: 45px;
+    padding: 8px;
+    font-size: 15px;
+    color: var(--wh-clr);
+    background: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    .clr {
+        color: var(--heading-clr);
+    }
+}
+
+/*=====================================
+    PRODUCT SHORT SELECT PART STYLE
+======================================*/
+.product-short-select {
+    height: 40px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:focus {
+        border-color: var(--brand-clr);
+        box-shadow: none;
+    }
+}
+

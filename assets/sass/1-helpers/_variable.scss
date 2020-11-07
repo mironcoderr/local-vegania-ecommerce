@@ -1,0 +1,42 @@
+
+
+// =====================================
+//       ALL TYPOGRAPHY VARIABLES
+//======================================
+$h1__size: 50px;
+$h2__size: 28px;
+$h3__size: 24px;
+$h4__size: 20px;
+$h5__size: 18px;
+$body__size: 16px;
+
+$regular__weight: 400;
+$medium__weight: 500;
+$semi__weight: 600;
+$bold__weight: 700;
+
+$primary__family: 'Heebo', sans-serif;
+
+// =====================================
+//         ALL COLOR VARIABLES
+//======================================
+:root {
+    --body-clr: #555555;
+    --brand-clr: #5cba47;
+    --wh-clr: #ffffff;
+    --header-border: #00a226;
+    --heading-clr: #232d3b;
+    --navbar-bg: #ddffd5;
+    --border-clr: #e8e8e8;
+    --light-white: #f5f5f5;
+    --placeholder-clr: #777777;
+}
+
+// =====================================
+//         ALL SHADOW VARIABLES
+//======================================
+// BOX SHADOW
+$primary__box__shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+
+// TEXT SHADOW
+$primary__text__shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);

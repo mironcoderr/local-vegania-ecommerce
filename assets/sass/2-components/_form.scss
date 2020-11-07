@@ -1,0 +1,205 @@
+
+
+/*=====================================
+         NAVBAR SEARCH-BAR STYLE
+======================================*/
+.search-form {
+    width: 100%;
+    display: block;
+    position: relative;
+
+    input {
+        width: 100%;
+        height: 45px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background: var(--wh-clr);
+        padding: 0px 150px 0px 20px;
+    }
+
+    .btn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+.navbar-form {
+    width: 100%;
+    margin: 0px 80px;
+
+    form {
+        @include flex__center;
+        justify-content: space-between;
+        background: var(--wh-clr);
+        border-radius: 8px;
+    
+        input {
+            width: 100%;
+            height: auto;
+            border: none;
+            background: transparent;
+            padding: 0px 20px;
+        }
+    
+        .btn {
+            width: 170px;
+            text-align: center;
+            padding: 12px 0px;
+            font-size: 13px;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+/*=====================================
+         FOOTER NEWSLETTER STYLE
+======================================*/
+.footer-form {
+    width: 100%;
+
+    form {
+        @include flex__center;
+        flex-direction: column;
+    
+        input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            background: #fbf2f2;
+            border-radius: 8px;
+            padding: 0px 20px;
+            margin-bottom: 20px;
+        }
+    
+        .btn {
+            width: 100%;
+            border-radius: 8px;
+            text-align: center;
+            padding: 12px 0px;
+            font-size: 13px;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+/*=====================================
+            REVIEW FORM STYLE
+======================================*/
+.review-form {
+    h3 {
+        margin: 0px 0px 25px 15px;
+    }
+
+    .btn {
+        margin-left: 15px;;
+    }
+}
+
+.grid-input {
+    @include flex__center;
+    margin-bottom: 30px;
+
+    input {
+        width: 100%;
+        height: 50px;
+        margin: 0px 15px;
+        padding: 0px 20px;
+        border-radius: 8px;
+        background: var(--light-white);
+        border: 1px solid var(--border-clr);
+
+        &:focus-within {
+            border-color: var(--brand-clr);
+        }
+    }
+}
+
+.row-input {
+    margin: 0px 15px 20px;
+
+    input {
+        width: 100%;
+        height: 50px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        background: var(--light-white);
+        border: 1px solid var(--border-clr);
+
+        &:focus-within {
+            border-color: var(--brand-clr);
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 250px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        background: var(--light-white);
+        border: 1px solid var(--border-clr);
+
+        &:focus-within {
+            border-color: var(--brand-clr);
+        }
+    }
+}
+
+.review-rating {
+    margin: 0px 15px 30px;
+    display: flex;
+
+    li {
+        margin-right: 15px;
+
+        i {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+            background: #f5f5f5;
+            color: #555555;
+            font-size: 14px;
+            text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            &:hover {
+                color: #ffffff;
+                background: #ffcc23;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-input {
+        flex-direction: column;
+        margin-bottom: 0px;
+
+        input {
+            margin-bottom: 20px;
+        }
+    }
+    .row-input {
+        margin: 0px 0px 20px;
+    }
+
+    .star-rating {
+        margin: 0px 0px 20px !important;
+    }
+
+    .review-form {
+        .btn {
+            margin-left: 0px;
+        }
+    }
+}
+

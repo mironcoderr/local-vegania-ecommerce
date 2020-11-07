@@ -1,0 +1,173 @@
+
+
+
+/*=====================================
+            PRODUCT CARD STYLE
+======================================*/
+.product-slider {
+    .product-card {
+        margin: 0px 15px;
+    }
+
+    .dandik,
+    .bamdik {
+        top: 38%;
+    }
+
+    .dandik {
+        right: -10px;
+    }
+    
+    .bamdik{
+        left: -10px;
+    }
+}
+
+// PRODUCT CARD
+.product-card {
+    width: 100%;
+    border-radius: 3px;
+    background: var(--wh-clr);
+
+    &:hover {
+        box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+        
+        .product-widget {
+            opacity: 1;
+            bottom: 15px;
+        }
+    }
+}
+
+// PRODUCT ITEM IMAGE
+.product-img {
+    position: relative;
+
+    img {
+        width: 100%;
+        border-radius: 3px;
+    }
+}
+
+// PRODUCT CARD HOVER WIDGET
+.product-widget {
+    @include flex__center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    @include cursor__transition;
+
+    li {
+        margin: 0px 5px;
+
+        button {
+            border: none;
+            outline: none;
+            background: none;
+
+            i {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 14px;
+                color: var(--wh-clr);
+                background: var(--brand-clr);
+                text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+// PRODUCT ALL CONTENT PARENT
+.product-content {
+    padding: 15px;
+    border-top: 1px solid var(--border-clr);
+}
+
+// PRODUCT ITEM NAME
+.product-name {
+    h6 {
+        font-weight: 500;
+        margin-bottom: 13px;
+
+        a {
+            color: var(--heading-clr);
+        }
+    }
+}
+
+// PRODUCT ITEM PRICE & DISCOUNT
+.product-price {
+    margin-bottom: 15px;
+    @include flex__center;
+    justify-content: space-between;
+
+    h6 {
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        color: var(--body-clr);
+
+        del {
+            color: var(--brand-clr);
+            font-size: 16px;
+        }
+    }
+}
+
+// PRODUCT ITEM RATING & REVIEW
+.product-rating {
+    @include flex__center;
+    align-items: baseline;
+
+    i {
+        color: #ffcc23;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    span {
+        color: var(--body-clr);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+// PRODUCT ITEM CART BUTTON
+.product-btn {
+    a {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px 0px;
+        border-radius: 3px;
+        @include flex__center;
+        color: var(--brand-clr);
+        border: 1px solid var(--brand-clr);
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+        @include cursor__transition;
+
+        &:hover {
+            color: var(--wh-clr);
+            background: var(--brand-clr);
+        }
+    }
+
+    i {
+        margin-top: -2px;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    .product-slider {
+        .product-card {
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,259 @@
+
+
+/*=====================================
+        PRODUCT DETAILS PART STYLE
+======================================*/
+.pro-det-part {
+    padding: 100px 0px 0px;
+}
+
+.pro-det-img {
+    img {
+        width: 100%;
+        background: var(--light-white);
+    }
+}
+
+.pro-det-cntnt {
+    margin-bottom: 10px;
+
+    h3 {
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--heading-clr);
+
+        del {
+            color: var(--brand-clr);
+        }
+    }
+}
+
+.pro-det-rev {
+    margin-bottom: 20px;
+
+    ul {
+        li {
+            display: inline-block;
+
+            i {
+                font-size: 14px;
+                color: #ffcc23;
+            }
+
+            a {
+                margin-left: 8px;
+                color: var(--heading-clr);
+                @include cursor__transition;
+                
+                &:hover {
+                    color: var(--brand-clr);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.pro-det-sum {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.pro-det-cart {
+    margin-bottom: 30px;
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 15px;
+
+            input {
+                width: 100px;
+                padding: 0px 15px;
+                height: 50px;
+                border-radius: 8px;
+                border: 2px solid var(--border-clr);
+
+                &:focus-within {
+                    border-color: var(--brand-clr);
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+
+                .btn {
+                    font-size: 16px;
+                    padding: 10px 14px;
+
+                    i {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pro-det-pay {
+    @include flex__start;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h5 {
+        margin-right: 15px;
+    }
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            a {
+                img {
+                    width: 55px;
+                }
+            }
+        }
+    }
+}
+
+.pro-det-share {
+    @include flex__start;
+    align-items: center;
+
+    h5 {
+        margin-right: 15px;
+    }
+
+    .round-icon li a i {
+        background: var(--light-white);
+
+        &:hover {
+            background: var(--brand-clr);
+        }
+    }
+}
+
+.pro-det-ad {
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .pro-det-part {
+        padding: 60px 0px 0px;
+    }
+
+    .pro-det-cart {
+        ul li {
+            input {
+                width: 80px;
+            }
+
+            .btn {
+                padding: 13px 12px;
+            }
+
+            &:last-child {
+                .btn {
+                    padding: 10px 10px;
+                }
+            }
+        }
+    } 
+
+    .pro-det-pay {
+        ul li a img {
+            width: 38px;
+        }
+    }
+
+    .pro-det-ad {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .pro-det-part {
+        padding: 80px 0px 0px;
+    }
+
+    .pro-det-img {
+        margin-bottom: 30px;
+    }
+
+    .pro-det-share {
+        .round-icon li {
+            margin-right: 12px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .pro-det-cart {
+        ul li {
+            .btn {
+                padding: 13px 18px;
+            }
+        }
+    } 
+
+    .pro-det-pay {
+        ul li a img {
+            width: 45px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pro-det-ad {
+        display: none;
+    }
+}
+
+
+/*=====================================
+        PRODUCT TAB PART STYLE
+======================================*/
+.pro-tab-part {
+    padding: 100px 0px 50px;
+}
+
+.pro-tab-descrip {
+    p {
+        line-height: 28px;
+
+        span {
+            display: block;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pro-tab-part {
+        padding: 60px 0px 30px;
+    }
+}
+
+
+/*=====================================
+            RELATED PART STYLE
+======================================*/
+.related-part {
+    border-top: 1px solid var(--border-clr);
+}

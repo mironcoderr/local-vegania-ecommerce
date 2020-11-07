@@ -1,0 +1,31 @@
+
+
+
+/*=====================================
+           BREADCRUMB PART STYLE
+======================================*/
+.breadcrumb {
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding: 0px;
+
+    li {
+        a {
+            color: var(--wh-clr);
+
+            &:hover {
+                color: var(--brand-clr);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .active {
+        color: var(--brand-clr);
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--brand-clr);
+}

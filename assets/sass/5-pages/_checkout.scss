@@ -1,0 +1,253 @@
+
+
+
+
+/*=====================================
+        CHECKOUT RESPONSIVE STYLE
+======================================*/
+.checkout-part {
+    padding: 100px 0px;
+}
+
+// CHECKOUT LOGIN ACTION
+.checkout-action {
+    text-align: center;
+    margin-bottom: 65px;
+    padding: 18px 20px 15px;
+    background: var(--wh-clr);
+    border-top: 3px solid var(--brand-clr);
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+
+    i {
+        color: var(--brand-clr);
+        margin-right: 8px;
+    }
+
+    span {
+        font-weight: 500;
+        color: var(--heading-clr);
+
+        a {
+            color: var(--heading-clr);
+            @include cursor__transition;
+
+            &:hover {
+                color: var(--brand-clr);
+            }
+        }
+    }
+}
+
+// CHECKOUT CONTENT OR FORM TITLE
+.check-form-title {
+    margin-bottom: 50px;
+
+    h3 {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 0px;
+            width: 100%;
+            height: 1px;
+            background: var(--border-clr);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 0px;
+            width: 50px;
+            height: 2px;
+            background: var(--brand-clr);
+        }
+    }
+}
+
+// CHECKOUT FORM INPUT & TEXTAREA
+.checkout-form {
+    .grid-input,
+    .row-input {
+        margin: 0px;
+
+        input {
+            height: 45px;
+        }
+
+        textarea {
+            height: 130px;
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            @include cursor__transition;
+
+            &:focus {
+                background-color: #fff;
+                border-color: var(--brand-clr);
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .grid-input {
+        input {
+            margin: 0px 15px 20px;
+        }
+    }
+
+    .row-input {
+        margin: 0px 15px 20px;
+
+        input {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// CHECKOUT RADIO BUTTON
+.form-check {
+    margin-bottom: 8px;
+}
+
+// CHECKOUT SHOPPING CART TABLE
+.checkout-table {
+    .table,
+    td,
+    th {
+        vertical-align: middle;
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    thead {
+        font-weight: 500;
+        color: var(--wh-clr);
+        background: var(--brand-clr);
+
+        th {
+            border-bottom: none;
+            border-top: 1px solid var(--border-clr);
+        }
+    }
+}
+
+.check-product {
+    @include flex__center;
+    justify-content: flex-start;
+
+    img {
+        width: 100px;
+        background: var(--light-white);
+        margin-right: 25px;
+    }
+}
+
+.check-quantity {
+    input {
+        width: 100px;
+        padding: 0px 15px;
+        height: 45px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 2px solid var(--border-clr);
+
+        &:focus-within {
+            border-color: var(--brand-clr);
+        }
+    }
+}
+
+.check-total {
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        margin-left: 25px;
+
+        i {
+            padding: 8px;
+            border-radius: 3px;
+            background: #da1515;
+            color: var(--wh-clr);
+            font-size: 14px;
+            text-shadow: $primary__text__shadow;
+        }
+    }
+}
+
+// CHECKOUT FINAL TOTAL CHARGE
+.checkout-charge {
+    margin-bottom: 45px;
+    
+    ul {
+        width: 600px;
+        margin: 0 auto;
+        background: var(--wh-clr);
+        border-top: 3px solid var(--brand-clr);
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+
+        li {
+            padding: 18px 30px;
+            @include flex__center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-clr);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            span {
+                font-size: 18px;
+                color: var(--heading-clr);
+            }
+        }
+    }
+}
+
+// CHECKOUT ORDER BUTTON
+.check-order-btn {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .checkout-part {
+        padding: 60px 0px;
+    }
+
+    .checkout-form {
+        .row-input {
+            margin: 0px 0px 20px;
+        }
+    }
+
+    .checkout-table {
+        overflow-x: scroll;
+
+        .table {
+            width: 800px;
+        }
+    }
+
+    .checkout-charge {
+        ul {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .grid-input input {
+        width: 43%;
+    }
+}

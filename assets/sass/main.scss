@@ -1,0 +1,53 @@
+
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "2-components/_dropdown.scss";
+@import "2-components/_nasted-dropdown.scss";
+@import "2-components/_round-icon.scss";
+@import "2-components/_button.scss";
+@import "2-components/_form.scss";
+@import "2-components/_slider-arrow.scss";
+@import "2-components/_breadcrumb.scss";
+@import "2-components/_nav-tabs.scss";
+@import "2-components/_star-rating.scss";
+@import "2-components/_slider-range.scss";
+@import "2-components/_select-option.scss";
+@import "2-components/_pagination.scss";
+@import "2-components/_checkbox.scss";
+
+//=======================================
+//          3 - ELEMENTS FOLDER
+//=======================================
+@import "3-elements/_popup-card.scss";
+@import "3-elements/_section-heading.scss";
+@import "3-elements/_product-card.scss";
+@import "3-elements/_blog-card.scss";
+@import "3-elements/_single-banner.scss";
+@import "3-elements/_review-list.scss";
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import "4-layouts/_header.scss";
+@import "4-layouts/_navbar.scss";
+@import "4-layouts/_btmbar.scss";
+@import "4-layouts/_footer.scss";
+
+//=======================================
+//          5 - PAGES FOLDER
+//=======================================
+@import "5-pages/_index.scss";
+@import "5-pages/_product-list.scss";
+@import "5-pages/_product-details.scss";
+@import "5-pages/_checkout.scss";

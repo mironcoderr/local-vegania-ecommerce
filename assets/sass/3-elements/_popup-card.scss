@@ -1,0 +1,237 @@
+
+
+
+/*=====================================
+            POPUP CARD PART STYLE
+======================================*/
+.popup-part {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    @include cursor__transition;
+}
+
+.cart-popup.active {
+    visibility: visible;
+    opacity: 1;
+
+    .popup-card {
+        top: 50%;
+    }
+}
+
+.wish-popup.active {
+    visibility: visible;
+    opacity: 1;
+
+    .popup-card {
+        top: 50%;
+    }
+}
+
+.cross-btn {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    i {
+        color: var(--body-clr);
+        background: var(--wh-clr);
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            color: var(--wh-clr);
+            background: var(--brand-clr);
+        }
+    }
+}
+
+.popup-card {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 450px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 30px 30px;
+    background: var(--wh-clr);
+    transform: translate(-50%, -50%);
+    @include cursor__transition;
+}
+
+.popup-logo {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-clr);
+
+    a {
+        img {
+            width: 160px;
+            height: auto;
+        }
+    }
+}
+
+.popup-heading {
+    margin-bottom: 20px;
+
+    h4 {
+        font-weight: 500;
+    }
+}
+
+.popup-list {
+    li {
+        padding: 25px 0px;
+        @include flex__center;
+        border-bottom: 1px solid var(--border-clr);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.popup-img {
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 25px;
+    background: var(--light-white);
+
+    a {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.popup-info {
+    width: 100%;
+}
+
+.popup-title {
+    @include flex__center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    h5 {
+        font-weight: 500;
+        text-transform: capitalize;
+
+        a {
+            color: var(--heading-clr);
+            
+            &:hover {
+                color: var(--brand-clr);
+            }
+        }
+    }
+}
+
+.popup-stepper {
+    @include flex__center;
+    justify-content: flex-start;
+
+    input {
+        width: 100px;
+        padding: 0px 15px;
+        height: 40px;
+        border-radius: 8px;
+        border: 2px solid var(--border-clr);
+
+        &:focus-within {
+            border: 2px solid var(--brand-clr);
+        }
+    }
+
+    h5 {
+        font-weight: 500;
+        margin-left: 25px;
+    }
+}
+
+.popup-price {
+    margin-bottom: 30px;
+
+    li {
+        padding: 10px 0px;
+        @include flex__center;
+        justify-content: space-between;
+        border-top: 1px solid var(--border-clr);
+
+        span {
+            font-weight: 500;
+            color: var(--heading-clr);
+            text-transform: capitalize;
+        }
+    }
+}
+
+.popup-btn {
+    .btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .popup-card {
+        width: 290px;
+        height: 400px;
+        padding: 30px 15px;
+    }
+
+    .popup-img {
+        margin-right: 15px;
+
+        a {
+            img {
+                width: 60px;
+            }
+        }
+    }
+
+    .popup-title {
+        margin-bottom: 12px;
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+
+    .popup-stepper h4 {
+        margin-left: 15px;
+    }
+
+    .stepper-input {
+        width: 40px;
+    }
+
+    .stepper-btn i {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .popup-stepper h5 {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,66 @@
+
+
+
+/*=====================================
+        PAGINATION PART STYLE
+======================================*/
+.pagination {
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    border-radius: 3px;
+    background: var(--wh-clr);
+}
+
+.page-item {
+    margin: 0px 6px;
+
+    &:first-child,
+    &:last-child {
+        .page-link {
+            border-radius: 8px;
+        }
+    }
+
+    .active {
+        color: var(--wh-clr);
+        background: var(--brand-clr);
+    }
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    padding: 0px;
+    color: var(--body-clr);
+    background: var(--light-white);
+
+    &:hover {
+        color: var(--wh-clr);
+        background: var(--brand-clr);
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/*=====================================
+      PAGINATION RESPONSIVE STYLE
+======================================*/
+@media (max-width: 991px) {
+    .pagination {
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    
+    .page-link {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
