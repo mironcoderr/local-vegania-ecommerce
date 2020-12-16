@@ -11,13 +11,17 @@
         <link rel="icon" href="assets/images/logo-icon.png">
 
         <!-- FOR FONT ICON -->
+        <link rel="stylesheet" href="assets/font/flaticon.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+        <!-- FOR SLICK SLIDER -->
+        <link rel="stylesheet" href="assets/css/slick.css">
 
         <!-- FOR BOOTSTRAP -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
         <!-- FOR STYLE -->
-        <link rel="stylesheet" href="assets/sass/main.css">
+        <link rel="stylesheet" href="assets/css/main.css">
         <!--=====================================
                     CSS LINK PART END
         =======================================-->
@@ -42,25 +46,28 @@
                         </ul>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <div class="header-option">
-                            <div class="header-curr">
-                                <i class="fas fa-money-bill"></i>
-                                <select class="header-select custom-select">
-                                    <option class="clr" selected>currency</option>
-                                    <option class="clr" value="1">Dollers</option>
-                                    <option class="clr" value="2">Pound</option>
-                                    <option class="clr" value="3">Euro</option>
-                                </select>
-                            </div>
-                            <div class="header-lang">
-                                <i class="fas fa-globe"></i>
-                                <select class="header-select custom-select">
-                                    <option class="clr" selected>language</option>
-                                    <option class="clr" value="1">English</option>
-                                    <option class="clr" value="2">Turkish</option>
-                                    <option class="clr" value="3">italian</option>
-                                </select>
-                            </div>
+                        <div class="header-component-div">
+                            <ul class="header-component">
+                                <li class="navbar-item navbar-dropdown">
+                                    <a class="navbar-link dropdown-indicator" href="#">
+                                        <img src="assets/images/america.png" alt="america">
+                                        <span>English</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-list dropdown-component">
+                                        <li>
+                                            <a class="dropdown-link" href="#">
+                                                <img src="assets/images/bangladesh.png" alt="bangladesh">Bangladesh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-link" href="#">
+                                                <img src="assets/images/italy.png" alt="bangladesh">Italy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -86,16 +93,15 @@
                                 <img src="assets/images/logo.png" alt="logo">
                             </a>
                             <form class="search-form navbar-src">
-                                <input type="text" placeholder="Search anything...">
+                                <input type="text" placeholder="Search...">
                                 <button class="btn btn-inline">
                                     <i class="fas fa-search"></i>
-                                    <span>search</span>
                                 </button>
                             </form>
                             <ul class="round-icon right-widget">
-                                <li><a href="#"><i class="fas fa-user"></i></a></li>
-                                <li><a href="#" class="wish-icon"><i class="fas fa-heart"></i><sup>0</sup></a></li>
-                                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><sup>0</sup></a></li>
+                                <li><a href="#"><i class="flaticon-user"></i></a></li>
+                                <li><a href="#" class="wish-icon"><i class="flaticon-heart"></i><sup>0</sup></a></li>
+                                <li><a href="#" class="cart-icon"><i class="flaticon-shopping-cart"></i><sup>0</sup></a></li>
                             </ul>
                         </div>
                     </div>
